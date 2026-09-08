@@ -1,5 +1,26 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "PumpOpti Medium";
+  src: url("./assets/fonts/PumpOpti-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Arial Rounded MT Bold";
+  src: url("./assets/fonts/ArialRoundedMTBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-paroxysm: "PumpOpti Medium", sans-serif;
+  --font-rounded: "Arial Rounded MT Bold", Arial, sans-serif;
+}
+
 :root {
   font-family: Inter, system-ui, sans-serif;
   color: #111111;

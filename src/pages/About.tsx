@@ -1,27 +1,78 @@
+import leftSidebar from '../assets/About Me Left Sidebar.jpg'
+import centerSection from '../assets/About Me Center.jpg'
+import rightSidebar from '../assets/About Me Right Sidebar.jpg'
+
 function About() {
   return (
-    <section className="mx-auto max-w-4xl px-6 py-24">
-      <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-black/50">
-        About Me
-      </p>
+    <main
+      className="
+        min-h-screen
+        overflow-x-auto
+        bg-[#302b27]
+      "
+    >
+      <section
+        className="
+          mx-auto
+          w-full
+          max-w-[1942px]
+        "
+      >
+        <div
+          className="
+            grid
+            w-full
+            grid-cols-[252.44fr_1453fr_236.11fr]
+            items-stretch
+          "
+        >
+          {/* ==========================================================
+              LEFT SIDEBAR
+              ========================================================== */}
+          <img
+            src={leftSidebar}
+            alt=""
+            className="
+              block
+              h-auto
+              w-full
+              select-none
+            "
+            draggable="false"
+          />
 
-      <h1 className="text-5xl font-semibold tracking-tight sm:text-6xl">
-        About
-      </h1>
+          {/* ==========================================================
+              CENTER CONTENT
+              ========================================================== */}
+          <img
+            src={centerSection}
+            alt="About Riley Van Heukelum"
+            className="
+              block
+              h-auto
+              w-full
+              select-none
+            "
+            draggable="false"
+          />
 
-      <div className="mt-12 space-y-6 text-lg leading-relaxed text-black/70">
-        <p>
-          Hi, I'm Riley. This is where you'll eventually introduce yourself,
-          your interests, your background, and what you want people to
-          understand about you as a creative professional.
-        </p>
-
-        <p>
-          This section can evolve alongside your personal brand throughout
-          the semester.
-        </p>
-      </div>
-    </section>
+          {/* ==========================================================
+              RIGHT SIDEBAR
+              ========================================================== */}
+          <img
+            src={rightSidebar}
+            alt=""
+            className="
+              block
+              h-auto
+              w-full
+              select-none
+            "
+            draggable="false"
+          />
+        </div>
+      </section>
+    </main>
   )
 }
 
