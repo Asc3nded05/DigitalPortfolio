@@ -31,13 +31,13 @@ const motionProjects: Project[] = [
     type: 'video',
     alt: 'Motion graphics project',
   },
-  {
-    title: 'MOTION PROJECT 03',
-    description: 'Time-based visual experiment.',
-    media: projectPath('Ainulindale Explainer Video.mp4'),
-    type: 'video',
-    alt: 'Motion graphics project',
-  },
+  // {
+  //   title: 'MOTION PROJECT 03',
+  //   description: 'Time-based visual experiment.',
+  //   media: projectPath('Ainulindale Explainer Video.mp4'),
+  //   type: 'video',
+  //   alt: 'Motion graphics project',
+  // },
   {
     title: 'MOTION PROJECT 04',
     description: 'Time-based visual experiment.',
@@ -101,27 +101,27 @@ const motionProjects: Project[] = [
     type: 'video',
     alt: 'Motion graphics project',
   },
-  {
-    title: 'MOTION PROJECT 13',
-    description: 'Time-based visual experiment.',
-    media: projectPath('Hevel.mp4'),
-    type: 'video',
-    alt: 'Motion graphics project',
-  },
-  {
-    title: 'MOTION PROJECT 14',
-    description: 'Time-based visual experiment.',
-    media: projectPath('Skinamarink Review.mp4'),
-    type: 'video',
-    alt: 'Motion graphics project',
-  },
-  {
-    title: 'MOTION PROJECT 15',
-    description: 'Time-based visual experiment.',
-    media: projectPath('Sword in the Stone.mp4'),
-    type: 'video',
-    alt: 'Motion graphics project',
-  },
+  // {
+  //   title: 'MOTION PROJECT 13',
+  //   description: 'Time-based visual experiment.',
+  //   media: projectPath('Hevel.mp4'),
+  //   type: 'video',
+  //   alt: 'Motion graphics project',
+  // },
+  // {
+  //   title: 'MOTION PROJECT 14',
+  //   description: 'Time-based visual experiment.',
+  //   media: projectPath('Skinamarink Review.mp4'),
+  //   type: 'video',
+  //   alt: 'Motion graphics project',
+  // },
+  // {
+  //   title: 'MOTION PROJECT 15',
+  //   description: 'Time-based visual experiment.',
+  //   media: projectPath('Sword in the Stone.mp4'),
+  //   type: 'video',
+  //   alt: 'Motion graphics project',
+  // },
 ]
 
 const threeDProjects: Project[] = [
