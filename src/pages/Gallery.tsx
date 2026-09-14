@@ -1,6 +1,7 @@
+import { useState } from 'react'
+import ProjectLightbox from '../components/ui/ProjectLightbox'
+
 import PortfolioCRT from '../components/ui/PortfolioCRT'
-import leftSidebar from '../assets/About Me Left Sidebar.jpg'
-import rightSidebar from '../assets/About Me Right Sidebar.jpg'
 
 import crtFrame from '../assets/CRT_TV_Frame.png'
 import crtScreen from '../assets/CRT_TV_Screen.png'
@@ -14,6 +15,7 @@ type Project = {
   media: string
   type: 'image' | 'video'
   alt: string
+  thumbnail?: string
 }
 
 const motionProjects: Project[] = [
@@ -23,6 +25,7 @@ const motionProjects: Project[] = [
     media: projectPath('Pinesbarrow Countdown.mp4'),
     type: 'video',
     alt: 'Motion graphics project',
+    thumbnail: `${import.meta.env.BASE_URL}/thumbnails/Pinesbarrow Countdown.jpg`
   },
   {
     title: 'Bloodbarrow Trailer',
@@ -30,6 +33,7 @@ const motionProjects: Project[] = [
     media: projectPath('Bloodbarrow Trailer.mp4'),
     type: 'video',
     alt: 'Motion graphics project',
+    thumbnail: `${import.meta.env.BASE_URL}/thumbnails/Bloodbarrow Trailer.jpg`,
   },
   // {
   //   title: 'Ainulindale',
@@ -44,6 +48,7 @@ const motionProjects: Project[] = [
     media: projectPath('NES Controller Advertisement.mp4'),
     type: 'video',
     alt: 'Motion graphics project',
+    thumbnail: `${import.meta.env.BASE_URL}/thumbnails/NES Controller Advertisement.jpg`,
   },
   {
     title: 'Windows 95 Styled Animated Joke',
@@ -51,6 +56,7 @@ const motionProjects: Project[] = [
     media: projectPath('Windows95 Joke.mp4'),
     type: 'video',
     alt: 'Motion graphics project',
+    thumbnail: `${import.meta.env.BASE_URL}/thumbnails/Windows95 Joke.jpg`,
   },
   {
     title: 'Luthen\'s Monologue',
@@ -58,6 +64,7 @@ const motionProjects: Project[] = [
     media: projectPath('Kinetic Typography.mp4'),
     type: 'video',
     alt: 'Motion graphics project',
+    thumbnail: `${import.meta.env.BASE_URL}/thumbnails/Kinetic Typography.jpg`,
   },
   {
     title: 'Lower Thirds Dragon',
@@ -65,6 +72,7 @@ const motionProjects: Project[] = [
     media: projectPath('Lower Thirds.mp4')  ,
     type: 'video',
     alt: 'Motion graphics project',
+    thumbnail: `${import.meta.env.BASE_URL}/thumbnails/Lower Thirds.jpg`,
   },
   {
     title: 'Spotify Logo Animation',
@@ -72,6 +80,7 @@ const motionProjects: Project[] = [
     media: projectPath('Spotify Logo Animation.mp4'),
     type: 'video',
     alt: 'Motion graphics project',
+    thumbnail: `${import.meta.env.BASE_URL}/thumbnails/Spotify Logo Animation.jpg`,
   },
   {
     title: 'Exposure Balance Explainer',
@@ -79,6 +88,7 @@ const motionProjects: Project[] = [
     media: projectPath('Exposure Balance.mp4'),
     type: 'video',
     alt: 'Motion graphics project',
+    thumbnail: `${import.meta.env.BASE_URL}/thumbnails/Exposure Balance.jpg`,
   },
   {
     title: 'Camera Setup Title Card',
@@ -86,6 +96,7 @@ const motionProjects: Project[] = [
     media: projectPath('Camera Explainer Transition.mp4'),
     type: 'video',
     alt: 'Motion graphics project',
+    thumbnail: `${import.meta.env.BASE_URL}/thumbnails/Camera Explainer Transition.jpg`,
   },
   {
     title: 'Flipbook',
@@ -93,6 +104,7 @@ const motionProjects: Project[] = [
     media: projectPath('Flipbook.mp4'),
     type: 'video',
     alt: 'Motion graphics project',
+    thumbnail: `${import.meta.env.BASE_URL}/thumbnails/Flipbook.jpg`,
   },
   {
     title: 'Performative Ball with Tail Excercise',
@@ -100,6 +112,7 @@ const motionProjects: Project[] = [
     media: projectPath('Matthias.mp4'),
     type: 'video',
     alt: 'Motion graphics project',
+    thumbnail: `${import.meta.env.BASE_URL}/thumbnails/Matthias.jpg`,
   },
   // {
   //   title: 'Hevel Explainer Animation',
@@ -186,18 +199,26 @@ const illustrationProjects: Project[] = [
   // },
 ]
 
+const allProjects = [
+  ...motionProjects,
+  ...threeDProjects,
+  ...illustrationProjects,
+]
+
 function ProjectSection({
   id,
   title,
   projects,
   crtFrame,
   crtScreen,
+  onOpen,
 }: {
   id: string
   title: string
   projects: Project[]
   crtFrame: string
   crtScreen: string
+  onOpen: (project: Project) => void
 }) {
   return (
     <section id={id} className="mb-20">
@@ -218,6 +239,7 @@ function ProjectSection({
             {...project}
             crtFrame={crtFrame}
             crtScreen={crtScreen}
+            onOpen={() => onOpen(project)}
           />
         ))}
       </div>
@@ -226,74 +248,49 @@ function ProjectSection({
 }
 
 function Gallery() {
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null)
+
   return (
     <main className="min-h-screen overflow-x-hidden bg-[#dedcc4]">
-      {/* Archive header
-      <section className="border-b border-[#777064] bg-[#302b27] px-6 py-10 text-[#dedcc4]">
-        <div className="mx-auto max-w-[1400px]">
-          <p className="font-rounded text-[11px] tracking-[0.15em] text-[#b6ad99]">
-            RVH-05 / CREATIVE ARCHIVE SYSTEM
-          </p>
-
-          <h1 className="mt-2 font-rounded text-[30px] font-bold tracking-wide">
-            PROJECT DATABASE
-          </h1>
-
-          <p className="mt-3 max-w-[650px] font-rounded text-[12px] leading-relaxed text-[#c9c0ad]">
-            A collection of selected work spanning motion, three-dimensional
-            design, illustration, and visual experimentation.
-          </p>
-        </div>
-      </section> */}
-
-      {/* Main archive */}
-      <section className="relative">
-        <div className="mx-auto grid max-w-[1942px] grid-cols-[minmax(90px,252px)_minmax(0,1fr)_minmax(90px,236px)]">
-          
-          {/* Left sidebar */}
-          <aside
-            className="hidden bg-[#dedcc4] bg-repeat-y bg-top md:block"
-            style={{
-              backgroundImage: `url('${leftSidebar}')`,
-            }}
+      <div className="mx-auto w-full max-w-[1800px] px-6 py-10 md:px-10 lg:px-16">
+        <div className="min-w-0 px-6 py-12 sm:px-10 lg:px-14">
+          <ProjectSection
+            id="motion"
+            title="MOTION / TIME-BASED WORK"
+            projects={motionProjects}
+            crtFrame={crtFrame}
+            crtScreen={crtScreen}
+            onOpen={setSelectedProject}
           />
 
-          {/* Portfolio */}
-          <div className="min-w-0 px-6 py-12 sm:px-10 lg:px-14">
-            <ProjectSection
-              id="motion"
-              title="MOTION / TIME-BASED WORK"
-              projects={motionProjects}
-              crtFrame={crtFrame}
-              crtScreen={crtScreen}
-            />
+          <ProjectSection
+            id="three-dimensional"
+            title="THREE-DIMENSIONAL WORK"
+            projects={threeDProjects}
+            crtFrame={crtFrame}
+            crtScreen={crtScreen}
+            onOpen={setSelectedProject}
+          />
 
-            <ProjectSection
-              id="three-dimensional"
-              title="THREE-DIMENSIONAL WORK"
-              projects={threeDProjects}
-              crtFrame={crtFrame}
-              crtScreen={crtScreen}
-            />
-
-            <ProjectSection
-              id="illustration"
-              title="ILLUSTRATION / GRAPHIC WORK"
-              projects={illustrationProjects}
-              crtFrame={crtFrame}
-              crtScreen={crtScreen}
-            />
-          </div>
-
-          {/* Right sidebar */}
-          <aside
-            className="hidden bg-[#dedcc4] bg-repeat-y bg-top md:block"
-            style={{
-              backgroundImage: `url('${rightSidebar}')`,
-            }}
+          <ProjectSection
+            id="illustration"
+            title="ILLUSTRATION / GRAPHIC WORK"
+            projects={illustrationProjects}
+            crtFrame={crtFrame}
+            crtScreen={crtScreen}
+            onOpen={setSelectedProject}
           />
         </div>
-      </section>
+      </div>
+
+      {selectedProject && (
+        <ProjectLightbox
+          project={selectedProject}
+          projects={allProjects}
+          onClose={() => setSelectedProject(null)}
+          onNavigate={setSelectedProject}
+        />
+      )}
     </main>
   )
 }
