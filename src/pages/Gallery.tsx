@@ -3,16 +3,20 @@ import ProjectLightbox from '../components/ui/ProjectLightbox'
 
 import PortfolioCRT from '../components/ui/PortfolioCRT'
 
-import crtFrame from '../assets/CRT_TV_Frame.png'
-import crtScreen from '../assets/CRT_TV_Screen.png'
+import galleryScreen from '../assets/Gallery Screen.svg'
 
-const projectPath = (filename: string) =>
-  `${import.meta.env.BASE_URL}projects/${encodeURIComponent(filename)}`
+const projectPathFullVideo = (filename: string) =>
+  `${import.meta.env.BASE_URL}media/videos/full/${encodeURIComponent(filename)}`
+const projectPathPreviewVideo = (filename: string) =>
+  `${import.meta.env.BASE_URL}media/videos/preview/${encodeURIComponent(filename)}`
+const projectPathImage = (filename: string) =>
+  `${import.meta.env.BASE_URL}media/images/${encodeURIComponent(filename)}`
 
 type Project = {
   title: string
   description: string
   media: string
+  preview?: string
   type: 'image' | 'video'
   alt: string
   thumbnail?: string
@@ -21,182 +25,181 @@ type Project = {
 const motionProjects: Project[] = [
   {
     title: 'Pinesbarrow Stopmotion Countdown',
-    description: 'A countdown animation that focused on leveraging scanned graphics, textures, effects, and expressions in After Effects to create a hand-crafted stop-motion aesthetic.',
-    media: projectPath('Pinesbarrow Countdown.mp4'),
+    description: 'A countdown animation that focused on leveraging scanned graphics, textures, and effects to create a stop-motion aesthetic. Accepted into the the Houghton University 36th Annual Juried Student Exhibition.',
+    media: projectPathFullVideo('Pinesbarrow Countdown_Full.mp4'),
+    preview: projectPathPreviewVideo('Pinesbarrow Countdown_Preview.mp4'),
     type: 'video',
     alt: 'Motion graphics project',
-    thumbnail: `${import.meta.env.BASE_URL}/thumbnails/Pinesbarrow Countdown.jpg`
+    thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Pinesbarrow Countdown.jpg`
   },
   {
     title: 'Bloodbarrow Trailer',
     description: 'A mock trailer for a hypothetical horror show titled Bloodbarrow inspired by experimental analog horror projects and seeking to mimic CRT-TV and VHS style distortions and texture.',
-    media: projectPath('Bloodbarrow Trailer.mp4'),
+    media: projectPathFullVideo('Bloodbarrow Trailer_Full.mp4'),
+    preview: projectPathPreviewVideo('Bloodbarrow Trailer_Preview.mp4'),
     type: 'video',
     alt: 'Motion graphics project',
-    thumbnail: `${import.meta.env.BASE_URL}/thumbnails/Bloodbarrow Trailer.jpg`,
+    thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Bloodbarrow Trailer.jpg`,
   },
-  // {
-  //   title: 'Ainulindale',
-  //   description: 'Time-based visual experiment.',
-  //   media: projectPath('Ainulindale Explainer Video.mp4'),
-  //   type: 'video',
-  //   alt: 'Motion graphics project',
-  // },
+  {
+    title: 'Ainulindale',
+    description: 'A brief animated recounting of the creation of the world from J.R.R. Tolkien\'s The Silmarillion. Winner of the Ben Frank and Jean Moss Award for artistic excellence in the Houghton University 36th Annual Juried Student Exhibition.',
+    media: projectPathFullVideo('Ainulindale Explainer Video_Full.mp4'),
+    preview: projectPathPreviewVideo('Ainulindale Explainer Video_Preview.mp4'),
+    type: 'video',
+    alt: 'Motion graphics project',
+    thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Ainulindale Explainer Video.jpg`,
+  },
   {
     title: 'NES Controller Advertisement',
     description: 'A short 3D animated advertisement for an NES controller making use of LCD screen texture and glitch effects.',
-    media: projectPath('NES Controller Advertisement.mp4'),
+    media: projectPathFullVideo('NES Controller Advertisement_Full.mp4'),
+    preview: projectPathPreviewVideo('NES Controller Advertisement_Preview.mp4'),
     type: 'video',
     alt: 'Motion graphics project',
-    thumbnail: `${import.meta.env.BASE_URL}/thumbnails/NES Controller Advertisement.jpg`,
+    thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/NES Controller Advertisement.jpg`,
   },
   {
     title: 'Windows 95 Styled Animated Joke',
     description: 'An animated question-response joke inspired by retro Windows 95 computer boot up sequences and OS interfaces.',
-    media: projectPath('Windows95 Joke.mp4'),
+    media: projectPathFullVideo('Windows95 Joke_Full.mp4'),
+    preview: projectPathPreviewVideo('Windows95 Joke_Preview.mp4'),
     type: 'video',
     alt: 'Motion graphics project',
-    thumbnail: `${import.meta.env.BASE_URL}/thumbnails/Windows95 Joke.jpg`,
+    thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Windows95 Joke.jpg`,
   },
   {
     title: 'Luthen\'s Monologue',
     description: 'A kinetic typography project set to a portion of Luthen\'s monologue from season 1, episode 10 of Andor focused on creating interesting motion with primarily typographic elements.',
-    media: projectPath('Kinetic Typography.mp4'),
+    media: projectPathFullVideo('Kinetic Typography_Full.mp4'),
+    preview: projectPathPreviewVideo('Kinetic Typography_Preview.mp4'),
     type: 'video',
     alt: 'Motion graphics project',
-    thumbnail: `${import.meta.env.BASE_URL}/thumbnails/Kinetic Typography.jpg`,
+    thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Kinetic Typography.jpg`,
   },
   {
     title: 'Lower Thirds Dragon',
     description: 'A vector based lower thirds animation featuring basic character rigging and animation to creating a dragon and fantasy aesthetic.',
-    media: projectPath('Lower Thirds.mp4')  ,
+    media: projectPathFullVideo('Lower Thirds_Full.mp4'),
+    preview: projectPathPreviewVideo('Lower Thirds_Preview.mp4'),
     type: 'video',
     alt: 'Motion graphics project',
-    thumbnail: `${import.meta.env.BASE_URL}/thumbnails/Lower Thirds.jpg`,
+    thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Lower Thirds.jpg`,
   },
   {
     title: 'Spotify Logo Animation',
     description: 'A 3D animation of the Spotify Logo that could be used for promotional advertisements.',
-    media: projectPath('Spotify Logo Animation.mp4'),
+    media: projectPathFullVideo('Spotify Logo Animation_Full.mp4'),
+    preview: projectPathPreviewVideo('Spotify Logo Animation_Preview.mp4'),
     type: 'video',
     alt: 'Motion graphics project',
-    thumbnail: `${import.meta.env.BASE_URL}/thumbnails/Spotify Logo Animation.jpg`,
+    thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Spotify Logo Animation.jpg`,
   },
   {
     title: 'Exposure Balance Explainer',
     description: 'An animated illustration of the balance of aperture, shutter speed, and ISO that affect the exposure of an image, created as part of a larger explainer video on camera exposure as a whole.',
-    media: projectPath('Exposure Balance.mp4'),
+    media: projectPathFullVideo('Exposure Balance_Full.mp4'),
+    preview: projectPathPreviewVideo('Exposure Balance_Preview.mp4'),
     type: 'video',
     alt: 'Motion graphics project',
-    thumbnail: `${import.meta.env.BASE_URL}/thumbnails/Exposure Balance.jpg`,
+    thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Exposure Balance.jpg`,
   },
   {
     title: 'Camera Setup Title Card',
-    description: 'An introductory title card and transition created for a video project focused on explaining how to set up a Sony A660 camera for video shooting. This graphic was designed with an alpha chanel to transition between video footage.',
-    media: projectPath('Camera Explainer Transition.mp4'),
+    description: 'An introductory title card created for a video project focused on explaining how to set up a Sony A660 camera for video shooting. This graphic was designed with an alpha chanel to transition between video footage.',
+    media: projectPathFullVideo('Camera Explainer Transition_Full.mp4'),
+    preview: projectPathPreviewVideo('Camera Explainer Transition_Preview.mp4'),
     type: 'video',
     alt: 'Motion graphics project',
-    thumbnail: `${import.meta.env.BASE_URL}/thumbnails/Camera Explainer Transition.jpg`,
+    thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Camera Explainer Transition.jpg`,
   },
   {
-    title: 'Flipbook',
-    description: 'A flipbook animation of a bouncing ball, designed to illustrate the concept of framerate for a large explainer video on camera exposure.',
-    media: projectPath('Flipbook.mp4'),
+    title: 'Hevel Explainer Animation',
+    description: 'A research-based animated explainer exploring the Hebrew word "Hevel" and its meaning in the book of Ecclesiastes.',
+    media: projectPathFullVideo('Hevel_Full.mp4'),
+    preview: projectPathPreviewVideo('Hevel_Preview.mp4'),
     type: 'video',
     alt: 'Motion graphics project',
-    thumbnail: `${import.meta.env.BASE_URL}/thumbnails/Flipbook.jpg`,
+    thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Hevel.jpg`,
   },
   {
-    title: 'Performative Ball with Tail Excercise',
-    description: 'An excerise combining squash and stretch and wave principles in a hand-drawn medium with a goal of creating motivated action through a simple scene.',
-    media: projectPath('Matthias.mp4'),
+    title: 'Skinamarink Review',
+    description: 'A short video review of the experimental indie horror film Skinamarink that focused on creating a VHS and CRt aesthetic to match the film\'s style and tone.',
+    media: projectPathFullVideo('Skinamarink Review_Full.mp4'),
+    preview: projectPathPreviewVideo('Skinamarink Review_Preview.mp4'),
     type: 'video',
     alt: 'Motion graphics project',
-    thumbnail: `${import.meta.env.BASE_URL}/thumbnails/Matthias.jpg`,
+    thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Skinamarink Review.jpg`,
   },
-  // {
-  //   title: 'Hevel Explainer Animation',
-  //   description: 'Time-based visual experiment.',
-  //   media: projectPath('Hevel.mp4'),
-  //   type: 'video',
-  //   alt: 'Motion graphics project',
-  // },
-  // {
-  //   title: 'Skinamarink Review',
-  //   description: 'Time-based visual experiment.',
-  //   media: projectPath('Skinamarink Review.mp4'),
-  //   type: 'video',
-  //   alt: 'Motion graphics project',
-  // },
-  // {
-  //   title: 'Sword in the Stone',
-  //   description: 'Time-based visual experiment.',
-  //   media: projectPath('Sword in the Stone.mp4'),
-  //   type: 'video',
-  //   alt: 'Motion graphics project',
-  // },
 ]
 
 const threeDProjects: Project[] = [
   {
     title: 'AEE Warning Poster 1',
     description: 'A poster graphic designed as a set featuring an NES controller modeled from reference and styled with toon shaders as an analog horror inspired warning poster that mixed 3D and 2D elements.',
-    media: projectPath('AAE Warning 1.jpg'),
+    media: projectPathImage('AAE Warning 1.jpg'),
     type: 'image',
     alt: '3D artwork',
   },
   {
     title: 'AEE Warning Poster 2',
     description: 'A poster graphic designed as a set featuring a kitchen pan modeled from reference and styled with toon shaders as an analog horror inspired warning poster that mixed 3D and 2D elements.',
-    media: projectPath('AAE Warning 2.jpg'),
+    media: projectPathImage('AAE Warning 2.jpg'),
     type: 'image',
     alt: '3D artwork',
   },
   {
     title: 'AEE Warning Poster 3',
     description: 'A poster graphic designed as a set featuring an office desk modeled from reference and styled with toon shaders as an analog horror inspired warning poster that mixed 3D and 2D elements.',
-    media: projectPath('AAE Warning 3.jpg'),
+    media: projectPathImage('AAE Warning 3.jpg'),
     type: 'image',
     alt: '3D artwork',
   },
   {
     title: 'Castle 1',
     description: 'A castle landscape scene created in Maya.',
-    media: projectPath('Castle 01.png'),
+    media: projectPathImage('Castle 01.png'),
     type: 'image',
     alt: '3D artwork',
   },
   {
     title: 'Castle 2',
     description: 'A close up shot of a castle landscape scene created in Maya.',
-    media: projectPath('Castle 02.png'),
+    media: projectPathImage('Castle 02.png'),
     type: 'image',
     alt: '3D artwork',
   },
 ]
 
 const illustrationProjects: Project[] = [
+    {
+    title: 'Stained Glass Warlock',
+    description: 'A geometric stained glass style illustration of a warlock character designed using Adobe Photoshop.',
+    media: projectPathImage('Stained Glass Warlock.jpg'),
+    type: 'image',
+    alt: 'Illustration',
+  },
   {
     title: 'Polaroid Illustration',
     description: 'A vector based illustration of a polariod camera designed using Adobe Illustrator.',
-    media: projectPath('Polaroid Illustration.png'),
+    media: projectPathImage('Polaroid Illustration.png'),
     type: 'image',
     alt: 'Illustration',
   },
   {
     title: 'Self-Portrait',
     description: 'A self-portrait illustration inspired by the artstyle used by Studio Ghibli.',
-    media: projectPath('GhibliStyleSelfPortrait.png'),
+    media: projectPathImage('GhibliStyleSelfPortrait.png'),
     type: 'image',
     alt: 'Illustration',
   },
-  // {
-  //   title: 'Chess Club Poster',
-  //   description: 'Experimental graphic illustration.',
-  //   media: projectPath('Chess Club Poster v3.pdf'),
-  //   type: 'image',
-  //   alt: 'Illustration',
-  // },
+  {
+    title: 'Chess Club Poster',
+    description: 'Experimental graphic illustration.',
+    media: projectPathImage('Chess Club Poster.png'),
+    type: 'image',
+    alt: 'Illustration',
+  },
 ]
 
 const allProjects = [
@@ -210,14 +213,12 @@ function ProjectSection({
   title,
   projects,
   crtFrame,
-  crtScreen,
   onOpen,
 }: {
   id: string
   title: string
   projects: Project[]
   crtFrame: string
-  crtScreen: string
   onOpen: (project: Project) => void
 }) {
   return (
@@ -225,7 +226,7 @@ function ProjectSection({
       <div className="mb-8 flex items-center gap-4">
         <div className="h-px flex-1 bg-[#777064]" />
 
-        <h2 className="font-rounded text-[18px] font-bold tracking-[0.08em] text-[#332d27]">
+        <h2 className="font-paroxysm text-[18px] tracking-[0.1em] text-[#332d27]">
           {title}
         </h2>
 
@@ -238,7 +239,6 @@ function ProjectSection({
             key={project.title}
             {...project}
             crtFrame={crtFrame}
-            crtScreen={crtScreen}
             onOpen={() => onOpen(project)}
           />
         ))}
@@ -258,17 +258,15 @@ function Gallery() {
             id="motion"
             title="MOTION / TIME-BASED WORK"
             projects={motionProjects}
-            crtFrame={crtFrame}
-            crtScreen={crtScreen}
+            crtFrame={galleryScreen}
             onOpen={setSelectedProject}
           />
 
           <ProjectSection
             id="three-dimensional"
-            title="THREE-DIMENSIONAL WORK"
+            title="3D WORK"
             projects={threeDProjects}
-            crtFrame={crtFrame}
-            crtScreen={crtScreen}
+            crtFrame={galleryScreen}
             onOpen={setSelectedProject}
           />
 
@@ -276,8 +274,7 @@ function Gallery() {
             id="illustration"
             title="ILLUSTRATION / GRAPHIC WORK"
             projects={illustrationProjects}
-            crtFrame={crtFrame}
-            crtScreen={crtScreen}
+            crtFrame={galleryScreen}
             onOpen={setSelectedProject}
           />
         </div>

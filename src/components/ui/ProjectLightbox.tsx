@@ -106,6 +106,7 @@ function ProjectLightbox({
             controls
             autoPlay
             playsInline
+            preload="metadata"
             className="max-h-[75vh] max-w-[80vw]"
           />
         )}
