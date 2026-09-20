@@ -22,7 +22,7 @@ function RockerSwitch({
       className="
         group
         flex
-        min-w-[62px]
+        min-w-[clamp(42px,3.96cqw,76px)]
         flex-col
         items-center
         justify-end
@@ -31,17 +31,15 @@ function RockerSwitch({
     >
       {({ isActive }) => (
         <>
-          {/* ==========================================================
-              ROCKER SWITCH
-              ========================================================== */}
+          {/* Rocker switch */}
           <img
             src={isActive ? onImage : offImage}
             alt=""
             aria-hidden="true"
             className="
               block
-              h-[76px]
-              w-[50px]
+              h-[clamp(42px,3.96cqw,76px)]
+              w-[clamp(28px,2.6cqw,50px)]
               select-none
               object-contain
               transition-transform
@@ -51,33 +49,38 @@ function RockerSwitch({
             draggable="false"
           />
 
-          {/* ==========================================================
-              INDICATOR LIGHT
-              ========================================================== */}
+          {/* Indicator light */}
           <span
-            className="relative mt-[4px] h-[9px] w-[9px] rounded-full"
+            className="
+              relative
+              mt-[clamp(2px,0.26cqw,5px)]
+              h-[clamp(5px,0.52cqw,10px)]
+              w-[clamp(5px,0.52cqw,10px)]
+              rounded-full
+            "
             style={{
               backgroundColor: isActive
                 ? indicatorColor
                 : '#514c43',
 
               boxShadow: isActive
-                ? `0 0 3px ${indicatorColor},
-                   0 0 8px ${indicatorColor},
-                   0 0 14px ${indicatorColor}99`
+                ? `
+                    0 0 3px ${indicatorColor},
+                    0 0 8px ${indicatorColor},
+                    0 0 14px ${indicatorColor}99
+                  `
                 : 'inset 0 1px 2px rgba(0,0,0,0.75)',
             }}
             aria-hidden="true"
           >
-            {/* Small reflected highlight */}
             {isActive && (
               <span
                 className="
                   absolute
-                  left-[2px]
-                  top-[1px]
-                  h-[2px]
-                  w-[2px]
+                  left-[20%]
+                  top-[10%]
+                  h-[20%]
+                  w-[20%]
                   rounded-full
                   bg-white/80
                 "
@@ -85,26 +88,21 @@ function RockerSwitch({
             )}
           </span>
 
-          {/* ==========================================================
-              LABEL
-              ========================================================== */}
+          {/* Label */}
           <span
-            className={`
-              mt-[3px]
+            className="
+              mt-[clamp(2px,0.21cqw,4px)]
               whitespace-nowrap
               font-rounded
-              text-[11px]
+              text-[clamp(6px,0.625cqw,12px)]
               font-bold
               leading-none
               tracking-[-0.02em]
+              text-[#514b43]
               transition-colors
               duration-150
-              ${
-                isActive
-                  ? 'text-[#332d27]'
-                  : 'text-[#514b43]'
-              }
-            `}
+              group-[.active]:text-[#332d27]
+            "
           >
             {label}
           </span>

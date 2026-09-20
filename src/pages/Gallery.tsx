@@ -60,6 +60,24 @@ const motionProjects: Project[] = [
     thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/NES Controller Advertisement.jpg`,
   },
   {
+    title: 'Spotify Logo Animation',
+    description: 'A 3D animation of the Spotify Logo that could be used for promotional advertisements.',
+    media: projectPathFullVideo('Spotify Logo Animation_Full.mp4'),
+    preview: projectPathPreviewVideo('Spotify Logo Animation_Preview.mp4'),
+    type: 'video',
+    alt: 'Motion graphics project',
+    thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Spotify Logo Animation.jpg`,
+  },
+  {
+    title: 'Exposure Balance Explainer',
+    description: 'An animated illustration of the balance of aperture, shutter speed, and ISO that affect the exposure of an image, created as part of a larger explainer video on camera exposure as a whole.',
+    media: projectPathFullVideo('Exposure Balance_Full.mp4'),
+    preview: projectPathPreviewVideo('Exposure Balance_Preview.mp4'),
+    type: 'video',
+    alt: 'Motion graphics project',
+    thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Exposure Balance.jpg`,
+  },
+    {
     title: 'Windows 95 Styled Animated Joke',
     description: 'An animated question-response joke inspired by retro Windows 95 computer boot up sequences and OS interfaces.',
     media: projectPathFullVideo('Windows95 Joke_Full.mp4'),
@@ -87,22 +105,22 @@ const motionProjects: Project[] = [
     thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Lower Thirds.jpg`,
   },
   {
-    title: 'Spotify Logo Animation',
-    description: 'A 3D animation of the Spotify Logo that could be used for promotional advertisements.',
-    media: projectPathFullVideo('Spotify Logo Animation_Full.mp4'),
-    preview: projectPathPreviewVideo('Spotify Logo Animation_Preview.mp4'),
+    title: 'Hevel Explainer Animation',
+    description: 'A research-based animated explainer exploring the Hebrew word "Hevel" and its meaning in the book of Ecclesiastes.',
+    media: projectPathFullVideo('Hevel_Full.mp4'),
+    preview: projectPathPreviewVideo('Hevel_Preview.mp4'),
     type: 'video',
     alt: 'Motion graphics project',
-    thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Spotify Logo Animation.jpg`,
+    thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Hevel.jpg`,
   },
   {
-    title: 'Exposure Balance Explainer',
-    description: 'An animated illustration of the balance of aperture, shutter speed, and ISO that affect the exposure of an image, created as part of a larger explainer video on camera exposure as a whole.',
-    media: projectPathFullVideo('Exposure Balance_Full.mp4'),
-    preview: projectPathPreviewVideo('Exposure Balance_Preview.mp4'),
+    title: 'Exposure Triangle Title Card',
+    description: 'An introductory title card created for a video project focused on explaining the exposure triangle in photography.',
+    media: projectPathFullVideo('Exposure Triangle_Full.mp4'),
+    preview: projectPathPreviewVideo('Exposure Triangle_Preview.mp4'),
     type: 'video',
     alt: 'Motion graphics project',
-    thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Exposure Balance.jpg`,
+    thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Exposure Triangle.jpg`,
   },
   {
     title: 'Camera Setup Title Card',
@@ -113,24 +131,15 @@ const motionProjects: Project[] = [
     alt: 'Motion graphics project',
     thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Camera Explainer Transition.jpg`,
   },
-  {
-    title: 'Hevel Explainer Animation',
-    description: 'A research-based animated explainer exploring the Hebrew word "Hevel" and its meaning in the book of Ecclesiastes.',
-    media: projectPathFullVideo('Hevel_Full.mp4'),
-    preview: projectPathPreviewVideo('Hevel_Preview.mp4'),
-    type: 'video',
-    alt: 'Motion graphics project',
-    thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Hevel.jpg`,
-  },
-  {
-    title: 'Skinamarink Review',
-    description: 'A short video review of the experimental indie horror film Skinamarink that focused on creating a VHS and CRt aesthetic to match the film\'s style and tone.',
-    media: projectPathFullVideo('Skinamarink Review_Full.mp4'),
-    preview: projectPathPreviewVideo('Skinamarink Review_Preview.mp4'),
-    type: 'video',
-    alt: 'Motion graphics project',
-    thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Skinamarink Review.jpg`,
-  },
+  // {
+  //   title: 'Skinamarink Review',
+  //   description: 'A short video review of the experimental indie horror film Skinamarink that focused on creating a VHS and CRt aesthetic to match the film\'s style and tone.',
+  //   media: projectPathFullVideo('Skinamarink Review_Full.mp4'),
+  //   preview: projectPathPreviewVideo('Skinamarink Review_Preview.mp4'),
+  //   type: 'video',
+  //   alt: 'Motion graphics project',
+  //   thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Skinamarink Review.jpg`,
+  // },
 ]
 
 const threeDProjects: Project[] = [
@@ -181,7 +190,7 @@ const illustrationProjects: Project[] = [
   },
   {
     title: 'Polaroid Illustration',
-    description: 'A vector based illustration of a polariod camera designed using Adobe Illustrator.',
+    description: 'A vector based illustration of a polaroid camera designed using Adobe Illustrator.',
     media: projectPathImage('Polaroid Illustration.png'),
     type: 'image',
     alt: 'Illustration',
@@ -256,7 +265,7 @@ function Gallery() {
         <div className="min-w-0 px-6 py-12 sm:px-10 lg:px-14">
           <ProjectSection
             id="motion"
-            title="MOTION / TIME-BASED WORK"
+            title="MOTION GRAPHICS"
             projects={motionProjects}
             crtFrame={galleryScreen}
             onOpen={setSelectedProject}
