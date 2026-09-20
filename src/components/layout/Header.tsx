@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
 
-import headerBanner from '../../assets/Header Banner.svg'
+import headerBanner from '../../assets/Header Banner (2).svg'
 
 import redOn from '../../assets/Red Rocker Switch On.svg'
 import redOff from '../../assets/Red Rocker Switch Off.svg'
@@ -55,7 +55,6 @@ function Header() {
         z-50
         w-full
         overflow-hidden
-
         bg-[#302b27]
         aspect-[1920.06/180.64]
       "
@@ -79,15 +78,17 @@ function Header() {
       />
 
       {/* ============================================================
-          HEADER CONTENT CANVAS
+          RESPONSIVE DESIGN CANVAS
+          
+          Everything inside this container scales relative to
+          the width of the header rather than the viewport.
           ============================================================ */}
       <div
         className="
-          relative
-          mx-auto
-          h-full
+          absolute
+          inset-0
           w-full
-          max-w-[1920px]
+          container-type:inline-size
         "
       >
         {/* ==========================================================
@@ -98,8 +99,8 @@ function Header() {
           end
           className="
             absolute
-            left-[4%]
-            top-[16%]
+            left-[3.5%]
+            bottom-[35%]
             z-10
           "
           aria-label="Paroxysm Systems - Home"
@@ -107,7 +108,7 @@ function Header() {
           <div
             className="
               font-paroxysm
-              text-[clamp(28px,2.5vw,50px)]
+              text-[clamp(20px,2.5cqw,10vh)]
               leading-[0.9]
               tracking-[-0.04em]
               text-[#dedcc4]
@@ -119,7 +120,7 @@ function Header() {
           <div
             className="
               font-paroxysm
-              text-[clamp(28px,2.5vw,50px)]
+              text-[clamp(20px,2.5cqw,10vh)]
               leading-[0.9]
               tracking-[-0.04em]
               text-[#dedcc4]
@@ -135,8 +136,8 @@ function Header() {
         <div
           className="
             absolute
-            left-[15.5%]
-            top-[40%]
+            left-[15%]
+            bottom-[33%]
             z-10
             text-[#dedcc4]
           "
@@ -144,7 +145,7 @@ function Header() {
           <div
             className="
               font-rounded
-              text-[clamp(13px,1.15vw,22px)]
+              text-[clamp(9px,1.15cqw,6vh)]
               font-bold
               leading-none
             "
@@ -154,9 +155,9 @@ function Header() {
 
           <div
             className="
-              mt-[6px]
+              mt-[0.3cqw]
               font-rounded
-              text-[clamp(10px,0.9vw,17px)]
+              text-[clamp(7px,0.9cqw,4vh)]
               font-bold
               leading-none
             "
@@ -171,16 +172,16 @@ function Header() {
         <div
           className="
             absolute
-            right-[4%]
+            right-[3.5%]
             top-[55%]
             z-20
             -translate-y-1/2
-            rounded-[11px]
+            rounded-[clamp(5px,0.57cqw,11px)]
             border
             border-[#d8d5bd]
             bg-[#dedcc4]
-            px-[30px]
-            py-[15px]
+            px-[clamp(10px,1.56cqw,30px)]
+            py-[clamp(6px,0.78cqw,15px)]
             shadow-[0_2px_5px_rgba(0,0,0,0.35)]
           "
         >
@@ -188,7 +189,7 @@ function Header() {
             className="
               flex
               items-end
-              gap-[18px]
+              gap-[clamp(7px,0.3cqw,18px)]
             "
             aria-label="Main navigation"
           >
