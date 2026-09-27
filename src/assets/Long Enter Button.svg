@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 351.37 70.6">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #778075;
+      }
+
+      .cls-2 {
+        fill: #879185;
+      }
+
+      .cls-3 {
+        fill: #98a395;
+      }
+    </style>
+  </defs>
+  <g id="Contact_Form_Monitor" data-name="Contact Form Monitor">
+    <polygon class="cls-2" points="351.37 70.6 .04 70.6 .04 11.88 7.87 .56 343.54 .59 351.37 11.88 351.37 70.6"/>
+    <polygon class="cls-1" points="351.37 70.6 0 70.6 27.45 14.2 324.56 14.24 351.37 70.6"/>
+    <path class="cls-3" d="M8.76,0h334.02c.52,0,.95.42.95.95v51.6c0,.52-.42.95-.95.95H8.71c-.52,0-.95-.42-.95-.95V1c0-.55.45-1,1-1Z"/>
+  </g>
+</svg>
