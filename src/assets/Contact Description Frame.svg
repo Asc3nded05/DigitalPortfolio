@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448.17 730">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #47403a;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+
+      .cls-2 {
+        fill: #5c534b;
+      }
+
+      .cls-3 {
+        fill: #302b27;
+      }
+    </style>
+  </defs>
+  <g id="Contact_Description_Monitor" data-name="Contact Description Monitor">
+    <path class="cls-2" d="M442.01,0H5.99C2.68,0,0,3.15,0,7.03v715.94c0,3.88,2.68,7.03,5.99,7.03,451.41-.32,228.42-.32,436.18-.32,3.31,0,5.99-3.15,5.99-7.03,0-119.41-.17-715.62-.17-715.62,0-3.88-2.68-7.03-5.99-7.03ZM429.66,432.83c0,7.77-5.36,14.06-11.98,14.06H32.94c-6.62,0-11.98-6.3-11.98-14.06l.03-394.66c0-7.77,5.36-14.06,11.98-14.06l384.71-.23c6.62,0,11.98,6.3,11.98,14.06v394.88Z"/>
+    <path class="cls-1" d="M417.35,448.66c-91.03,0-209.95-.05-384.41-.05-6.62,0-11.99-5.4-11.99-12.07-.07-93.19.06-304.04,0-400.54,0-6.67,5.36-12.07,11.98-12.07,176.39,0,214.54-.03,384.42-.03,6.62,0,11.99,5.4,12,12.07.07,93.16-.07,304.72,0,400.62,0,6.67-5.36,12.08-11.99,12.08Z"/>
+    <g id="Bars">
+      <rect class="cls-3" x="18.47" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="31.52" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="44.56" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="57.61" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="70.65" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="83.7" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="96.75" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="109.79" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="122.84" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="135.88" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="148.93" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="161.97" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="175.02" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="188.07" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="201.11" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="214.16" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="227.2" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="240.25" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="253.29" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="266.34" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="279.38" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="292.43" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="305.48" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="318.52" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="331.57" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="344.61" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="357.66" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="370.7" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="383.75" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="409.84" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="396.79" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+      <rect class="cls-3" x="422.89" y="456.44" width="8.44" height="58.09" rx="1" ry="1"/>
+    </g>
+  </g>
+</svg>
