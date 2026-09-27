@@ -1070,7 +1070,7 @@ function Contact() {
                         pb-[4%]
                         font-rounded
                         text-[clamp(9px,1.8cqw,15px)]
-                        font-rounded
+                        font-bold
                         uppercase
                         tracking-[0.08em]
                         text-[#241b18]
