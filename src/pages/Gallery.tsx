@@ -204,7 +204,7 @@ const illustrationProjects: Project[] = [
   },
   {
     title: 'Chess Club Poster',
-    description: 'Experimental graphic illustration.',
+    description: 'A poster graphic designed using Affinity Designer and Affinity Publisher to gather interest to start a new chess club at Houghton University.',
     media: projectPathImage('Chess Club Poster.png'),
     type: 'image',
     alt: 'Illustration',

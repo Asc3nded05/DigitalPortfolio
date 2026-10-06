@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 424.6 192.53">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ffba08;
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        fill: #241b18;
+        stroke: #47403a;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #85786c;
+        stroke: #302b27;
+      }
+
+      .cls-5 {
+        fill: #5c534b;
+      }
+    </style>
+  </defs>
+  <g id="Profile">
+    <rect class="cls-5" width="424.6" height="192.53" rx="3" ry="3"/>
+    <circle class="cls-4" cx="17.29" cy="16.35" r="10.82"/>
+    <line class="cls-3" x1="12.47" y1="16.35" x2="22.41" y2="16.35"/>
+    <line class="cls-3" x1="17.29" y1="11.39" x2="17.29" y2="21.32"/>
+    <circle class="cls-4" cx="17.44" cy="174.63" r="10.82"/>
+    <line class="cls-3" x1="12.63" y1="174.63" x2="22.56" y2="174.63"/>
+    <line class="cls-3" x1="17.44" y1="169.66" x2="17.44" y2="179.6"/>
+    <circle class="cls-4" cx="407.78" cy="16.35" r="10.82"/>
+    <line class="cls-3" x1="402.96" y1="16.35" x2="412.9" y2="16.35"/>
+    <line class="cls-3" x1="407.78" y1="11.39" x2="407.78" y2="21.32"/>
+    <circle class="cls-4" cx="407.93" cy="174.63" r="10.82"/>
+    <line class="cls-3" x1="403.12" y1="174.63" x2="413.05" y2="174.63"/>
+    <line class="cls-3" x1="407.93" y1="169.66" x2="407.93" y2="179.6"/>
+    <rect class="cls-2" x="37.02" y="16.65" width="351.17" height="159.23" rx="6" ry="6"/>
+    <g id="Grid">
+      <rect class="cls-1" x="48.08" y="43.87" width="329.06" height="30.38"/>
+      <rect class="cls-1" x="48.08" y="74.25" width="329.06" height="30.38"/>
+      <rect class="cls-1" x="48.08" y="104.63" width="329.06" height="30.38"/>
+      <rect class="cls-1" x="48.08" y="135" width="329.06" height="30.38"/>
+    </g>
+  </g>
+</svg>
