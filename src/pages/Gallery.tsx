@@ -242,7 +242,7 @@ function ProjectSection({
         <div className="h-px flex-1 bg-[#777064]" />
       </div>
 
-      <div className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
           <PortfolioCRT
             key={project.title}
@@ -261,8 +261,8 @@ function Gallery() {
 
   return (
     <main className="min-h-screen overflow-x-hidden bg-[#dedcc4]">
-      <div className="mx-auto w-full max-w-[1800px] px-6 py-10 md:px-10 lg:px-16">
-        <div className="min-w-0 px-6 py-12 sm:px-10 lg:px-14">
+      <div className="mx-auto w-full max-w-[1800px] px-0 pt-8 md:px-10 lg:px-16">
+        <div className="min-w-0 px-6 py-0  sm:px-10 lg:px-14">
           <ProjectSection
             id="motion"
             title="MOTION GRAPHICS"

@@ -53,10 +53,16 @@ function Header() {
       className="
         relative
         z-50
+        min-h-[150px]
         w-full
         overflow-hidden
         bg-[#302b27]
-        aspect-[1920.06/180.64]
+
+        sm:min-h-[150px]
+        md:min-h-[180px]
+
+        min-[800px]:aspect-[1920.06/180.64]
+        min-[800px]:min-h-0
       "
     >
       {/* ============================================================
@@ -72,16 +78,16 @@ function Header() {
           h-full
           w-full
           select-none
-          object-fill
+          object-cover
+          object-center
+
+          lg:object-fill
         "
         draggable="false"
       />
 
       {/* ============================================================
           RESPONSIVE DESIGN CANVAS
-          
-          Everything inside this container scales relative to
-          the width of the header rather than the viewport.
           ============================================================ */}
       <div
         className="
@@ -92,79 +98,57 @@ function Header() {
         "
       >
         {/* ==========================================================
-            PAROXYSM SYSTEMS
+            RILEY VAN HEUKELUM
             ========================================================== */}
         <NavLink
           to="/"
           end
           className="
             absolute
-            left-[3.5%]
-            bottom-[35%]
+            left-[5%]
+            top-[12%]
             z-10
+
+            max-[449px]:top-[10%]
+
+            min-[450px]:top-1/2
+            min-[450px]:-translate-y-1/2
+
+            min-[800px]:left-[3.5%]
+            min-[800px]:top-auto
+            min-[800px]:bottom-[35%]
+            min-[800px]:translate-y-0
           "
-          aria-label="Paroxysm Systems - Home"
+          aria-label="Riley Van Heukelum - Home"
         >
           <div
             className="
               font-paroxysm
-              text-[clamp(20px,2.5cqw,10vh)]
+              text-[clamp(20px,5.5cqw,42px)]
               leading-[0.9]
               tracking-[-0.04em]
               text-[#dedcc4]
+
+              min-[800px]:text-[clamp(20px,2.5cqw,10vh)]
             "
           >
-            Paroxysm
+            Riley
           </div>
 
           <div
             className="
               font-paroxysm
-              text-[clamp(20px,2.5cqw,10vh)]
+              text-[clamp(20px,5.5cqw,42px)]
               leading-[0.9]
               tracking-[-0.04em]
               text-[#dedcc4]
+
+              min-[800px]:text-[clamp(20px,2.5cqw,10vh)]
             "
           >
-            Systems
+            Van Heukelum
           </div>
         </NavLink>
-
-        {/* ==========================================================
-            SYSTEM IDENTIFICATION
-            ========================================================== */}
-        <div
-          className="
-            absolute
-            left-[15%]
-            bottom-[33%]
-            z-10
-            text-[#dedcc4]
-          "
-        >
-          <div
-            className="
-              font-rounded
-              text-[clamp(9px,1.15cqw,6vh)]
-              font-bold
-              leading-none
-            "
-          >
-            RVH-05
-          </div>
-
-          <div
-            className="
-              mt-[0.3cqw]
-              font-rounded
-              text-[clamp(7px,0.9cqw,4vh)]
-              font-bold
-              leading-none
-            "
-          >
-            Creative Archive System
-          </div>
-        </div>
 
         {/* ==========================================================
             NAVIGATION ENCLOSURE
@@ -172,24 +156,43 @@ function Header() {
         <div
           className="
             absolute
-            right-[3.5%]
-            top-[55%]
+            bottom-[7%]
+            left-[5%]
+            right-[5%]
             z-20
-            -translate-y-1/2
-            rounded-[clamp(5px,0.57cqw,11px)]
+
+            rounded-[clamp(5px,1.5cqw,11px)]
             border
             border-[#d8d5bd]
             bg-[#dedcc4]
-            px-[clamp(10px,1.56cqw,30px)]
-            py-[clamp(6px,0.78cqw,15px)]
+            px-[clamp(8px,2.5cqw,30px)]
+            py-[clamp(7px,1.5cqw,15px)]
             shadow-[0_2px_5px_rgba(0,0,0,0.35)]
+
+            min-[450px]:bottom-auto
+            min-[450px]:left-auto
+            min-[450px]:right-[5%]
+            min-[450px]:top-1/2
+            min-[450px]:-translate-y-1/2
+            min-[450px]:w-auto
+
+            min-[800px]:right-[3.5%]
+            min-[800px]:top-[55%]
+            min-[800px]:rounded-[clamp(5px,0.57cqw,11px)]
+            min-[800px]:px-[clamp(10px,1.56cqw,30px)]
+            min-[800px]:py-[clamp(6px,0.78cqw,15px)]
           "
         >
           <nav
             className="
               flex
               items-end
-              gap-[clamp(7px,0.3cqw,18px)]
+              justify-center
+              gap-[clamp(8px,2.5cqw,18px)]
+
+              min-[450px]:justify-start
+
+              min-[800px]:gap-[clamp(7px,0.3cqw,18px)]
             "
             aria-label="Main navigation"
           >
