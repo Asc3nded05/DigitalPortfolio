@@ -11,7 +11,7 @@ import Contact from './pages/Contact'
 
 function App() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col bg-[#dedcc4]">
       <Header />
 
       <main className="flex-1">

@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom'
 
-import headerBanner from '../../assets/Header Banner (2).svg'
+import headerBanner from '../../assets/Header Banner.svg'
+import personalLogo from '../../assets/PersonalLogo_001.svg'
 
 import redOn from '../../assets/Red Rocker Switch On.svg'
 import redOff from '../../assets/Red Rocker Switch Off.svg'
@@ -53,106 +54,110 @@ function Header() {
       className="
         relative
         z-50
-        min-h-[150px]
+        min-h-[160px]
         w-full
         overflow-hidden
         bg-[#302b27]
 
-        sm:min-h-[150px]
-        md:min-h-[180px]
-
-        min-[800px]:aspect-[1920.06/180.64]
-        min-[800px]:min-h-0
+        min-[450px]:min-h-[180px]
+        min-[655px]:min-h-[180px]
+        min-[800px]:min-h-[180px]
+        min-[1920px]:aspect-[1920.06/180.64]
       "
     >
-      {/* ============================================================
-          ILLUSTRATOR HEADER BANNER
-          ============================================================ */}
+      {/* Header banner artwork */}
       <img
         src={headerBanner}
         alt=""
         aria-hidden="true"
+        draggable="false"
         className="
           absolute
           inset-0
+          block
           h-full
           w-full
           select-none
-          object-cover
-          object-center
-
-          lg:object-fill
-        "
-        draggable="false"
+          object-cover"
       />
 
-      {/* ============================================================
-          RESPONSIVE DESIGN CANVAS
-          ============================================================ */}
+      {/* Responsive design canvas */}
       <div
         className="
           absolute
           inset-0
           w-full
-          container-type:inline-size
+          [container-type:inline-size]
         "
       >
-        {/* ==========================================================
-            RILEY VAN HEUKELUM
-            ========================================================== */}
+        {/* Personal logo and name */}
         <NavLink
           to="/"
           end
+          aria-label="Riley Van Heukelum - Home"
           className="
             absolute
             left-[5%]
             top-[12%]
             z-10
+            flex
+            items-center
+            gap-[clamp(8px,2cqw,18px)]
 
-            max-[449px]:top-[10%]
+            max-[654px]:top-[10%]
 
-            min-[450px]:top-1/2
-            min-[450px]:-translate-y-1/2
-
-            min-[800px]:left-[3.5%]
-            min-[800px]:top-auto
-            min-[800px]:bottom-[35%]
-            min-[800px]:translate-y-0
+            min-[655px]:top-1/2
+            min-[655px]:-translate-y-1/2
           "
-          aria-label="Riley Van Heukelum - Home"
         >
-          <div
+          <img
+            src={personalLogo}
+            alt=""
+            aria-hidden="true"
+            draggable="false"
             className="
-              font-paroxysm
-              text-[clamp(20px,5.5cqw,42px)]
-              leading-[0.9]
-              tracking-[-0.04em]
-              text-[#dedcc4]
-
-              min-[800px]:text-[clamp(20px,2.5cqw,10vh)]
+              block
+              h-auto
+              w-[clamp(34px,12cqw,160px)]
+              shrink-0
+              object-contain
             "
-          >
-            Riley
-          </div>
+          />
 
-          <div
-            className="
-              font-paroxysm
-              text-[clamp(20px,5.5cqw,42px)]
-              leading-[0.9]
-              tracking-[-0.04em]
-              text-[#dedcc4]
+          <div className="flex flex-col">
+            <span
+              className="
+                whitespace-nowrap
+                font-paroxysm
+                text-[clamp(20px,5.5cqw,42px)]
+                leading-[0.9]
+                tracking-[-0.04em]
+                text-[#dedcc4]
 
-              min-[800px]:text-[clamp(20px,2.5cqw,10vh)]
-            "
-          >
-            Van Heukelum
+                min-[1000px]:text-[clamp(20px,2.5cqw,48px)]
+              "
+            >
+              Riley
+            </span>
+
+            <span
+              className="
+                whitespace-nowrap
+                font-paroxysm
+                text-[clamp(20px,5.5cqw,42px)]
+                leading-[0.9]
+                tracking-[-0.04em]
+                text-[#dedcc4]
+
+                min-[1000px]:text-[clamp(20px,2.5cqw,48px)]
+              "
+            >
+              Van Heukelum
+            </span>
           </div>
         </NavLink>
 
-        {/* ==========================================================
-            NAVIGATION ENCLOSURE
-            ========================================================== */}
+        {/* Navigation enclosure */}
         <div
           className="
             absolute
@@ -169,18 +174,18 @@ function Header() {
             py-[clamp(7px,1.5cqw,15px)]
             shadow-[0_2px_5px_rgba(0,0,0,0.35)]
 
-            min-[450px]:bottom-auto
-            min-[450px]:left-auto
-            min-[450px]:right-[5%]
-            min-[450px]:top-1/2
-            min-[450px]:-translate-y-1/2
-            min-[450px]:w-auto
+            min-[655px]:bottom-auto
+            min-[655px]:left-auto
+            min-[655px]:right-[5%]
+            min-[655px]:top-1/2
+            min-[655px]:-translate-y-1/2
+            min-[655px]:w-auto
 
-            min-[800px]:right-[3.5%]
-            min-[800px]:top-[55%]
-            min-[800px]:rounded-[clamp(5px,0.57cqw,11px)]
-            min-[800px]:px-[clamp(10px,1.56cqw,30px)]
-            min-[800px]:py-[clamp(6px,0.78cqw,15px)]
+            min-[1000px]:right-[3.5%]
+            min-[1000px]:top-[55%]
+            min-[1000px]:rounded-[clamp(5px,0.57cqw,11px)]
+            min-[1000px]:px-[clamp(10px,1.56cqw,30px)]
+            min-[1000px]:py-[clamp(6px,0.78cqw,15px)]
           "
         >
           <nav
@@ -190,9 +195,9 @@ function Header() {
               justify-center
               gap-[clamp(8px,2.5cqw,18px)]
 
-              min-[450px]:justify-start
+              min-[655px]:justify-start
 
-              min-[800px]:gap-[clamp(7px,0.3cqw,18px)]
+              min-[1000px]:gap-[clamp(7px,0.3cqw,18px)]
             "
             aria-label="Main navigation"
           >

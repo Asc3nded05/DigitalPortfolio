@@ -153,7 +153,7 @@ function Contact() {
                   EMAIL
                   ================================================== */}
               <a
-                href="mailto:rileyvanheukelum@gmail.com"
+                href="mailto:riley@rileyvanheukelum.com"
                 aria-label="Email Riley Van Heukelum"
                 className="
                   group

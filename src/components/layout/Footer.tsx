@@ -99,7 +99,7 @@ function Footer() {
         >
           {/* Email */}
           <a
-            href="mailto:rileyvanheukelum@gmail.com"
+            href="mailto:riley@rileyvanheukelum.com"
             aria-label="Email Riley Van Heukelum"
             title="Email"
             className="
