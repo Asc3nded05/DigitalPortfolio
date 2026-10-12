@@ -108,6 +108,11 @@ function Header() {
 
             min-[655px]:top-1/2
             min-[655px]:-translate-y-1/2
+
+            min-[800px]:left-[3.5%]
+            min-[800px]:top-auto
+            min-[800px]:bottom-[30%]
+            min-[800px]:translate-y-0
           "
         >
           <img
@@ -121,6 +126,7 @@ function Header() {
               w-[clamp(34px,12cqw,160px)]
               shrink-0
               object-contain
+              min-[2000px]:w-[clamp(34px,13cqw,220px)]
             "
           />
 

@@ -22,15 +22,16 @@ function AboutProfile() {
         "
       >
         <div
-            className="
-              font-paroxysm
-              text-[clamp(7px,2cqw,18px)]
-              translate-y-1
-              -translate-x-2.25  
-            "
+          className="
+            font-paroxysm
+            text-[clamp(7px,2cqw,18px)]
+            translate-y-1
+            -translate-x-2.25
+          "
         >
-            Profile:
+          Profile:
         </div>
+
         <div>Name: Riley Van Heukelum</div>
         <div>Incept Date: 09/06/2005</div>
         <div>Stationed: Rochester, NY</div>
@@ -42,14 +43,7 @@ function AboutProfile() {
         src={profileFrame}
         alt=""
         aria-hidden="true"
-        className="
-          relative
-          z-10
-          block
-          h-auto
-          w-full
-          select-none
-        "
+        className="relative z-10 block h-auto w-full select-none"
         draggable="false"
       />
     </div>
