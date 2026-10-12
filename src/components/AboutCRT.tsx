@@ -18,7 +18,7 @@ function AboutCRT() {
           font-rounded
           text-[clamp(8px,.85cqw,22px)]
           max-[1200px]:text-[clamp(8px,1.75cqw,20px)]
-          max-[1920px]:text-[clamp(8px,1.1cqw,20px)]
+          max-[1500px]:text-[clamp(8px,1.1cqw,20px)]
           font-bold
           leading-[1.25]
           text-[#ffba08]
