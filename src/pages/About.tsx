@@ -36,8 +36,8 @@ function About() {
               self-start
               bg-[#dedcc4]
               p-[1.2%]
-              min-[1920px]:ml-[12.1%]
-              min-[1920px]:mr-[12.1%]
+              min-[1500px]:ml-[12.1%]
+              min-[1500px]:mr-[12.1%]
             "
           >
             {/* PORTRAIT + PROFILE */}
@@ -53,7 +53,7 @@ function About() {
           </div>
 
           {/* LEFT SIDEBAR — does not affect section height */}
-          <div className="pointer-events-none absolute left-0 top-0 z-0 hidden h-full min-[1920px]:block">
+          <div className="pointer-events-none absolute left-0 top-0 z-0 hidden h-full min-[1500px]:block">
             <img
               src={leftSidebar}
               alt=""
@@ -64,7 +64,7 @@ function About() {
           </div>
 
           {/* RIGHT SIDEBAR — does not affect section height */}
-          <div className="pointer-events-none absolute right-0 top-0 z-0 hidden h-full min-[1920px]:block">
+          <div className="pointer-events-none absolute right-0 top-0 z-0 hidden h-full min-[1500px]:block">
             <img
               src={rightSidebar}
               alt=""
