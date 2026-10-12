@@ -1,6 +1,7 @@
 import { useForm, ValidationError } from '@formspree/react'
 
 import contactDescriptionMonitor from '../assets/Contact Description Frame.svg'
+import contactDescriptionMonitorMobile from '../assets/Contact Description Frame Mobile.svg'
 import contactFormFrame from '../assets/Contact Form Frame.svg'
 import longEnterButton from '../assets/Long Enter Button.svg'
 
@@ -17,9 +18,12 @@ function Contact() {
           className="
             mx-auto
             grid
+            w-full
             max-w-[1400px]
             grid-cols-1
-            gap-8
+            gap-4
+            px-4
+            sm:px-6
             lg:grid-cols-[0.6677fr_1fr]
             lg:gap-6
           "
@@ -31,7 +35,8 @@ function Contact() {
             className="
               relative
               w-full
-              aspect-[448.17/730]
+              aspect-[448.17/451.37]
+              lg:aspect-[448.17/730]
             "
           >
             {/* ====================================================
@@ -77,7 +82,7 @@ function Contact() {
                   className="
                     mt-[3%]
                     font-paroxysm
-                    text-[clamp(24px,7cqw,48px)]
+                    text-[clamp(22px,7cqw,48px)]
                     leading-none
                     tracking-[-0.04em]
                   "
@@ -90,7 +95,7 @@ function Contact() {
                     mt-[5%]
                     max-w-[92%]
                     font-rounded
-                    text-[clamp(11px,2.7cqw,19px)]
+                    text-[clamp(10px,2.7cqw,19px)]
                     leading-[1.4]
                     text-[#dedcc4]/75
                   "
@@ -115,6 +120,12 @@ function Contact() {
                 flex
                 flex-col
                 gap-[1vh]
+                max-[1024px]:bottom-[4%]
+                max-[1024px]:left-[13%]
+                max-[1024px]:right-[13%]
+                lg:bottom-[4.5%]
+                lg:left-[9%]
+                lg:right-[9%]
               "
             >
 
@@ -516,6 +527,26 @@ function Contact() {
             {/* ====================================================
                 DESCRIPTION MONITOR FRAME
                 ==================================================== */}
+            {/* Mobile description monitor frame */}
+            <img
+              src={contactDescriptionMonitorMobile}
+              alt=""
+              aria-hidden="true"
+              className="
+                pointer-events-none
+                absolute
+                inset-0
+                z-30
+                block
+                h-full
+                w-full
+                select-none
+                lg:hidden
+              "
+              draggable="false"
+            />
+
+            {/* Desktop description monitor frame */}
             <img
               src={contactDescriptionMonitor}
               alt=""
@@ -525,9 +556,11 @@ function Contact() {
                 absolute
                 inset-0
                 z-30
+                hidden
                 h-full
                 w-full
                 select-none
+                lg:block
               "
               draggable="false"
             />
