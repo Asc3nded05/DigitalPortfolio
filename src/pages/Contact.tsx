@@ -8,38 +8,7 @@ function Contact() {
   const [state, handleSubmit] = useForm('xdekppyv')
 
   return (
-    <main className="min-h-screen bg-[#dedcc4] pt-[2vh] pb-[2vh]">
-      {/* ==========================================================
-          PAGE HEADER
-          ========================================================== */}
-      {/* <section className="px-5 pb-8 pt-3 sm:px-8 sm:pb-10">
-        <div
-          className="
-            mx-auto
-            max-w-[1400px]
-            border-b-[8px]
-            border-b-[#5c534b]
-            bg-[#302b27]
-          "
-        >
-          <h1
-            className="
-              px-6
-              py-4
-              font-paroxysm
-              text-[clamp(36px,3.5vw,92px)]
-              leading-none
-              tracking-[-0.04em]
-              text-[#dedcc4]
-              sm:px-7
-              sm:py-5
-            "
-          >
-            Contact
-          </h1>
-        </div>
-      </section> */}
-
+    <main className="bg-[#dedcc4] pt-[2vh] pb-[2vh]">
       {/* ==========================================================
           CONTACT MONITORS
           ========================================================== */}
@@ -153,7 +122,7 @@ function Contact() {
                   EMAIL
                   ================================================== */}
               <a
-                href="mailto:rileyvanheukelum@gmail.com"
+                href="mailto:riley@rileyvanheukelum.com"
                 aria-label="Email Riley Van Heukelum"
                 className="
                   group
