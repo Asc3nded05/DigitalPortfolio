@@ -131,7 +131,7 @@ function PortfolioCRT({
             height: '25%',
           }}
         >
-          <p className="h-full overflow-hidden px-[3%] py-[3%] font-rounded text-[clamp(9px,1vw,14px)] font-bold leading-[1.15] text-[#f4c400]">
+          <p className="h-full overflow-hidden px-[3%] py-[3%] font-rounded text-[clamp(9px,1vw,14px)] font-bold leading-[1.15] text-[#dedcc4]">
             {description}
           </p>
         </div>

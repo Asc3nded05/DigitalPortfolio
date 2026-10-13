@@ -1,4 +1,5 @@
 import crtFrame from '../assets/About Me CRT TV.svg'
+import crtFrameMobile from '../assets/About Me CRT TV Mobile.svg'
 
 function AboutCRT() {
   return (
@@ -7,30 +8,38 @@ function AboutCRT() {
       <div
         className="
           absolute
-          left-[12%]
+          left-[12.5%]
           right-[12%]
-          top-[6%]
-          bottom-[20%]
+          top-[16%]
+          bottom-[16%]
           z-20
           overflow-hidden
-          px-[5%]
-          py-[4%]
+          px-[4%]
+          py-[3%]
           font-rounded
-          text-[clamp(8px,.85cqw,22px)]
-          max-[1200px]:text-[clamp(8px,1.75cqw,20px)]
-          max-[1500px]:text-[clamp(8px,1.1cqw,20px)]
+          text-[clamp(6.9px,2.1cqw,30px)]
           font-bold
           leading-[1.25]
-          text-[#ffba08]
+          text-[#dedcc4]
           text-justify
+
+          min-[1200px]:left-[12%]
+          min-[1200px]:right-[12%]
+          min-[1200px]:top-[6%]
+          min-[1200px]:bottom-[20%]
+          min-[1200px]:px-[5%]
+          min-[1200px]:py-[4%]
+          min-[1200px]:text-[clamp(8px,.85cqw,22px)]
+          min-[1200px]:max-[1500px]:text-[clamp(8px,1.1cqw,20px)]
         "
       >
         <h1
           className="
             mb-[4%]
             font-paroxysm
-            text-[clamp(14px,3cqw,54px)]
+            text-[clamp(12px,5cqw,80px)]
             leading-none
+            min-[1200px]:text-[clamp(14px,3cqw,54px)]
           "
         >
           Operator:
@@ -66,12 +75,21 @@ function AboutCRT() {
         </p>
       </div>
 
-      {/* PHYSICAL CRT FRAME */}
+      {/* MOBILE PHYSICAL CRT FRAME */}
+      <img
+        src={crtFrameMobile}
+        alt=""
+        aria-hidden="true"
+        className="relative z-10 block h-auto w-full select-none min-[1200px]:hidden"
+        draggable="false"
+      />
+
+      {/* DESKTOP PHYSICAL CRT FRAME */}
       <img
         src={crtFrame}
         alt=""
         aria-hidden="true"
-        className="relative z-10 block h-auto w-full select-none"
+        className="relative z-10 hidden h-auto w-full select-none min-[1200px]:block"
         draggable="false"
       />
     </div>

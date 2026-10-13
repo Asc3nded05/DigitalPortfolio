@@ -13,18 +13,20 @@ function AboutProfile() {
           flex-col
           justify-center
           font-rounded
-          text-[clamp(7px,2cqw,14px)]
+          text-[clamp(7px,1cqw,14px)]
+          max-[1200px]:text-[clamp(7px,3cqw,40px)]
           font-bold
           uppercase
           leading-[2.25]
-          text-[#ffba08]
-          -translate-y-2.5
+          text-[#dedcc4]
+          -translate-y-0.75
         "
       >
         <div
           className="
             font-paroxysm
             text-[clamp(7px,2cqw,18px)]
+            max-[1200px]:text-[clamp(7px,3.5cqw,40px)]
             translate-y-1
             -translate-x-2.25
           "
