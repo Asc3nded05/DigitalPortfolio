@@ -13,8 +13,9 @@ function AboutProfile() {
           flex-col
           justify-center
           font-rounded
-          text-[clamp(7px,1cqw,14px)]
+          text-[clamp(7px,.75cqw,18px)]
           max-[1200px]:text-[clamp(7px,3cqw,40px)]
+          max-[1800px]:text-[clamp(7px,1cqw,18px)]
           font-bold
           uppercase
           leading-[2.25]
@@ -25,8 +26,9 @@ function AboutProfile() {
         <div
           className="
             font-paroxysm
-            text-[clamp(7px,2cqw,18px)]
+            text-[clamp(7px,1cqw,22px)]
             max-[1200px]:text-[clamp(7px,3.5cqw,40px)]
+            max-[1800px]:text-[clamp(7px,1.5cqw,22px)]
             translate-y-1
             -translate-x-2.25
           "
