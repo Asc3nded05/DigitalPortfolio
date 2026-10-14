@@ -269,8 +269,8 @@ function Gallery() {
 
             <div className="mt-5 grid gap-4 md:grid-cols-[1fr_auto] md:items-end">
               <p className="max-w-2xl text-sm leading-7 sm:text-base">
-                A collection of motion graphics, 3D artwork, illustration, and
-                graphic design exploring visual storytelling, movement, and
+                A collection of motion graphics, illustration, and
+                graphic layout design exploring visual storytelling, movement, and
                 experimental aesthetics.
               </p>
 
