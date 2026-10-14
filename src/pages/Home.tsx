@@ -45,6 +45,7 @@ function Home() {
 
   return (
     <main className="flex flex-col bg-[#dedcc4]">
+
       {/* ==========================================================
           DEMO REEL MONITOR
 
