@@ -29,7 +29,7 @@ const motionProjects: Project[] = [
     media: projectPathFullVideo('Pinesbarrow Countdown_Full.mp4'),
     preview: projectPathPreviewVideo('Pinesbarrow Countdown_Preview.mp4'),
     type: 'video',
-    alt: 'Motion graphics project',
+    alt: 'Pinesbarrow Stopmotion Countdown',
     thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Pinesbarrow Countdown.jpg`
   },
   {
@@ -38,7 +38,7 @@ const motionProjects: Project[] = [
     media: projectPathFullVideo('Bloodbarrow Trailer_Full.mp4'),
     preview: projectPathPreviewVideo('Bloodbarrow Trailer_Preview.mp4'),
     type: 'video',
-    alt: 'Motion graphics project',
+    alt: 'Bloodbarrow Trailer',
     thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Bloodbarrow Trailer.jpg`,
   },
   {
@@ -47,7 +47,7 @@ const motionProjects: Project[] = [
     media: projectPathFullVideo('Ainulindale Explainer Video_Full.mp4'),
     preview: projectPathPreviewVideo('Ainulindale Explainer Video_Preview.mp4'),
     type: 'video',
-    alt: 'Motion graphics project',
+    alt: 'Ainulindale',
     thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Ainulindale Explainer Video.jpg`,
   },
   {
@@ -56,7 +56,7 @@ const motionProjects: Project[] = [
     media: projectPathFullVideo('NES Controller Advertisement_Full.mp4'),
     preview: projectPathPreviewVideo('NES Controller Advertisement_Preview.mp4'),
     type: 'video',
-    alt: 'Motion graphics project',
+    alt: 'NES Controller Advertisement',
     thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/NES Controller Advertisement.jpg`,
   },
   {
@@ -65,7 +65,7 @@ const motionProjects: Project[] = [
     media: projectPathFullVideo('Spotify Logo Animation_Full.mp4'),
     preview: projectPathPreviewVideo('Spotify Logo Animation_Preview.mp4'),
     type: 'video',
-    alt: 'Motion graphics project',
+    alt: 'Spotify Logo Animation',
     thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Spotify Logo Animation.jpg`,
   },
   {
@@ -74,7 +74,7 @@ const motionProjects: Project[] = [
     media: projectPathFullVideo('Exposure Balance_Full.mp4'),
     preview: projectPathPreviewVideo('Exposure Balance_Preview.mp4'),
     type: 'video',
-    alt: 'Motion graphics project',
+    alt: 'Exposure Balance Explainer',
     thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Exposure Balance.jpg`,
   },
     {
@@ -83,8 +83,35 @@ const motionProjects: Project[] = [
     media: projectPathFullVideo('Windows95 Joke_Full.mp4'),
     preview: projectPathPreviewVideo('Windows95 Joke_Preview.mp4'),
     type: 'video',
-    alt: 'Motion graphics project',
+    alt: 'Windows 95 Styled Animated Joke',
     thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Windows95 Joke.jpg`,
+  },
+  {
+    title: 'Hevel Explainer Animation',
+    description: 'A research-based animated explainer exploring the Hebrew word "Hevel" and its meaning in the book of Ecclesiastes.',
+    media: projectPathFullVideo('Hevel_Full.mp4'),
+    preview: projectPathPreviewVideo('Hevel_Preview.mp4'),
+    type: 'video',
+    alt: 'Hevel Explainer Animation',
+    thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Hevel.jpg`,
+  },
+  {
+    title: 'Camera Setup Title Card',
+    description: 'An introductory title card created for a video project focused on explaining how to set up a Sony A660 camera for video shooting. This graphic was designed with an alpha chanel to transition between video footage.',
+    media: projectPathFullVideo('Camera Explainer Transition_Full.mp4'),
+    preview: projectPathPreviewVideo('Camera Explainer Transition_Preview.mp4'),
+    type: 'video',
+    alt: 'Camera Setup Title Card',
+    thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Camera Explainer Transition.jpg`,
+  },
+  {
+    title: 'Exposure Triangle Title Card',
+    description: 'An introductory title card created for a video project focused on explaining the exposure triangle in photography.',
+    media: projectPathFullVideo('Exposure Triangle_Full.mp4'),
+    preview: projectPathPreviewVideo('Exposure Triangle_Preview.mp4'),
+    type: 'video',
+    alt: 'Exposure Triangle Title Card',
+    thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Exposure Triangle.jpg`,
   },
   {
     title: 'Luthen\'s Monologue',
@@ -92,7 +119,7 @@ const motionProjects: Project[] = [
     media: projectPathFullVideo('Kinetic Typography_Full.mp4'),
     preview: projectPathPreviewVideo('Kinetic Typography_Preview.mp4'),
     type: 'video',
-    alt: 'Motion graphics project',
+    alt: 'Luthen\'s Monologue',
     thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Kinetic Typography.jpg`,
   },
   {
@@ -101,35 +128,8 @@ const motionProjects: Project[] = [
     media: projectPathFullVideo('Lower Thirds_Full.mp4'),
     preview: projectPathPreviewVideo('Lower Thirds_Preview.mp4'),
     type: 'video',
-    alt: 'Motion graphics project',
+    alt: 'Lower Thirds Dragon',
     thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Lower Thirds.jpg`,
-  },
-  {
-    title: 'Hevel Explainer Animation',
-    description: 'A research-based animated explainer exploring the Hebrew word "Hevel" and its meaning in the book of Ecclesiastes.',
-    media: projectPathFullVideo('Hevel_Full.mp4'),
-    preview: projectPathPreviewVideo('Hevel_Preview.mp4'),
-    type: 'video',
-    alt: 'Motion graphics project',
-    thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Hevel.jpg`,
-  },
-  {
-    title: 'Exposure Triangle Title Card',
-    description: 'An introductory title card created for a video project focused on explaining the exposure triangle in photography.',
-    media: projectPathFullVideo('Exposure Triangle_Full.mp4'),
-    preview: projectPathPreviewVideo('Exposure Triangle_Preview.mp4'),
-    type: 'video',
-    alt: 'Motion graphics project',
-    thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Exposure Triangle.jpg`,
-  },
-  {
-    title: 'Camera Setup Title Card',
-    description: 'An introductory title card created for a video project focused on explaining how to set up a Sony A660 camera for video shooting. This graphic was designed with an alpha chanel to transition between video footage.',
-    media: projectPathFullVideo('Camera Explainer Transition_Full.mp4'),
-    preview: projectPathPreviewVideo('Camera Explainer Transition_Preview.mp4'),
-    type: 'video',
-    alt: 'Motion graphics project',
-    thumbnail: `${import.meta.env.BASE_URL}media/thumbnails/Camera Explainer Transition.jpg`,
   },
   // {
   //   title: 'Skinamarink Review',
@@ -142,79 +142,72 @@ const motionProjects: Project[] = [
   // },
 ]
 
-const threeDProjects: Project[] = [
-  {
-    title: 'AEE Warning Poster 1',
-    description: 'A poster graphic designed as a set featuring an NES controller modeled from reference and styled with toon shaders as an analog horror inspired warning poster that mixed 3D and 2D elements.',
-    media: projectPathImage('AAE Warning 1.jpg'),
-    type: 'image',
-    alt: '3D artwork',
-  },
-  {
-    title: 'AEE Warning Poster 2',
-    description: 'A poster graphic designed as a set featuring a kitchen pan modeled from reference and styled with toon shaders as an analog horror inspired warning poster that mixed 3D and 2D elements.',
-    media: projectPathImage('AAE Warning 2.jpg'),
-    type: 'image',
-    alt: '3D artwork',
-  },
-  {
-    title: 'AEE Warning Poster 3',
-    description: 'A poster graphic designed as a set featuring an office desk modeled from reference and styled with toon shaders as an analog horror inspired warning poster that mixed 3D and 2D elements.',
-    media: projectPathImage('AAE Warning 3.jpg'),
-    type: 'image',
-    alt: '3D artwork',
-  },
-  // {
-  //   title: 'Castle 1',
-  //   description: 'A castle landscape scene created in Maya.',
-  //   media: projectPathImage('Castle 01.png'),
-  //   type: 'image',
-  //   alt: '3D artwork',
-  // },
-  // {
-  //   title: 'Castle',
-  //   description: 'A castle landscape scene created and rendered in Maya.',
-  //   media: projectPathImage('Castle 02.png'),
-  //   type: 'image',
-  //   alt: '3D artwork',
-  // },
-]
-
 const illustrationProjects: Project[] = [
     {
     title: 'Stained Glass Warlock',
     description: 'A geometric stained glass style illustration of a warlock character designed using Adobe Photoshop.',
     media: projectPathImage('Stained Glass Warlock.jpg'),
     type: 'image',
-    alt: 'Illustration',
+    alt: 'Stained Glass Warlock',
   },
   {
     title: 'Polaroid Illustration',
     description: 'A vector based illustration of a polaroid camera designed using Adobe Illustrator.',
     media: projectPathImage('Polaroid Illustration.png'),
     type: 'image',
-    alt: 'Illustration',
+    alt: 'Polaroid Illustration',
   },
   {
     title: 'Self-Portrait',
     description: 'A self-portrait illustration inspired by the artstyle used by Studio Ghibli.',
     media: projectPathImage('GhibliStyleSelfPortrait.png'),
     type: 'image',
-    alt: 'Illustration',
+    alt: 'Self-Portrait',
+  },
+]
+
+const graphicLayoutProjects: Project[] = [
+  {
+    title: 'AEE Warning Poster 1',
+    description: 'A poster graphic designed as a set featuring an NES controller modeled from reference and styled with toon shaders as an analog horror inspired warning poster that mixed 3D and 2D elements.',
+    media: projectPathImage('AAE Warning 1.jpg'),
+    type: 'image',
+    alt: 'AEE Warning Poster 1',
+  },
+  {
+    title: 'AEE Warning Poster 2',
+    description: 'A poster graphic designed as a set featuring a kitchen pan modeled from reference and styled with toon shaders as an analog horror inspired warning poster that mixed 3D and 2D elements.',
+    media: projectPathImage('AAE Warning 2.jpg'),
+    type: 'image',
+    alt: 'AEE Warning Poster 2',
+  },
+  {
+    title: 'AEE Warning Poster 3',
+    description: 'A poster graphic designed as a set featuring an office desk modeled from reference and styled with toon shaders as an analog horror inspired warning poster that mixed 3D and 2D elements.',
+    media: projectPathImage('AAE Warning 3.jpg'),
+    type: 'image',
+    alt: 'AEE Warning Poster 3',
   },
   {
     title: 'Chess Club Poster',
     description: 'A poster graphic designed using Affinity Designer and Affinity Publisher to gather interest to start a new chess club at Houghton University.',
     media: projectPathImage('Chess Club Poster.png'),
     type: 'image',
-    alt: 'Illustration',
+    alt: 'Chess Club Poster',
   },
+  // {
+  //   title: 'Pinesbarrow Press',
+  //   description: 'A graphic for the fiction town of Pinesbarrow designed using Adobe InDesign to create a fictional press release for the town\'s local newspaper.',
+  //   media: projectPathImage('Pinesbarrow Press.png'),
+  //   type: 'image',
+  //   alt: 'Illustration',
+  // },
 ]
 
 const allProjects = [
   ...motionProjects,
-  ...threeDProjects,
   ...illustrationProjects,
+  ...graphicLayoutProjects,
 ]
 
 function ProjectSection({
@@ -334,13 +327,13 @@ function Gallery() {
                   <span className="mb-1 block text-[10px] text-[#756a5d] group-hover:text-[#c0b69f]">
                     DIRECTORY / 02
                   </span>
-                  <span className="block">ILLUSTRATION / GRAPHIC</span>
+                  <span className="block">ILLUSTRATION</span>
                 </span>
                 <span aria-hidden="true">↘</span>
               </a>
 
               <a
-                href="#three-dimensional"
+                href="#graphic-layout"
                 className="
                   group flex min-w-0 items-center justify-between gap-3
                   border border-[#8c8174] bg-[#e3dfca]
@@ -355,7 +348,7 @@ function Gallery() {
                   <span className="mb-1 block text-[10px] text-[#756a5d] group-hover:text-[#c0b69f]">
                     DIRECTORY / 03
                   </span>
-                  <span className="block">3D WORK</span>
+                  <span className="block">GRAPHIC LAYOUT</span>
                 </span>
                 <span aria-hidden="true">↘</span>
               </a>
@@ -373,16 +366,16 @@ function Gallery() {
 
           <ProjectSection
             id="illustration"
-            title="ILLUSTRATION / GRAPHIC WORK"
+            title="ILLUSTRATION"
             projects={illustrationProjects}
             crtFrame={galleryScreen}
             onOpen={setSelectedProject}
           />
 
           <ProjectSection
-            id="three-dimensional"
-            title="3D WORK"
-            projects={threeDProjects}
+            id="graphic-layout"
+            title="GRAPHIC LAYOUT"
+            projects={graphicLayoutProjects}
             crtFrame={galleryScreen}
             onOpen={setSelectedProject}
           />
