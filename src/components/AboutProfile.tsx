@@ -15,7 +15,7 @@ function AboutProfile() {
           font-rounded
           text-[clamp(7px,.75cqw,18px)]
           max-[1200px]:text-[clamp(7px,3cqw,40px)]
-          max-[1800px]:text-[clamp(7px,1cqw,18px)]
+          max-[1800px]:text-[clamp(7px,.8cqw,14px)]
           font-bold
           uppercase
           leading-[2.25]
@@ -28,7 +28,7 @@ function AboutProfile() {
             font-paroxysm
             text-[clamp(7px,1cqw,22px)]
             max-[1200px]:text-[clamp(7px,3.5cqw,40px)]
-            max-[1800px]:text-[clamp(7px,1.5cqw,22px)]
+            max-[1800px]:text-[clamp(7px,1cqw,20px)]
             translate-y-1
             -translate-x-2.25
           "

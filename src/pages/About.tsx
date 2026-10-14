@@ -36,8 +36,8 @@ function About() {
               self-start
               bg-[#dedcc4]
               p-[1.2%]
-              min-[1800px]:ml-[12.1%]
-              min-[1800px]:mr-[12.1%]
+              min-[1500px]:ml-[12.1%]
+              min-[1500px]:mr-[12.1%]
             "
           >
             {/* PORTRAIT + PROFILE */}
