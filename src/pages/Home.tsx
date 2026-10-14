@@ -79,7 +79,7 @@ function Home() {
         <div
           className="
             relative
-            w-[min(97vw,calc((100svh-280px)*2.159))]
+            w-[min(97vw,calc((100svh-280px)*2.24))]
             shrink-0
             lg:block
             max-lg:!hidden
