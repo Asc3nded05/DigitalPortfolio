@@ -8,6 +8,7 @@ import Gallery from './pages/Gallery'
 import Process from './pages/Process'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import WebDev from './pages/WebDev'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/process" element={<Process />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/webdev" element={<WebDev />} />
         </Routes>
       </main>
 

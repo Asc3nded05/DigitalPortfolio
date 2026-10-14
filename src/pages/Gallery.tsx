@@ -164,20 +164,20 @@ const threeDProjects: Project[] = [
     type: 'image',
     alt: '3D artwork',
   },
-  {
-    title: 'Castle 1',
-    description: 'A castle landscape scene created in Maya.',
-    media: projectPathImage('Castle 01.png'),
-    type: 'image',
-    alt: '3D artwork',
-  },
-  {
-    title: 'Castle 2',
-    description: 'A close up shot of a castle landscape scene created in Maya.',
-    media: projectPathImage('Castle 02.png'),
-    type: 'image',
-    alt: '3D artwork',
-  },
+  // {
+  //   title: 'Castle 1',
+  //   description: 'A castle landscape scene created in Maya.',
+  //   media: projectPathImage('Castle 01.png'),
+  //   type: 'image',
+  //   alt: '3D artwork',
+  // },
+  // {
+  //   title: 'Castle',
+  //   description: 'A castle landscape scene created and rendered in Maya.',
+  //   media: projectPathImage('Castle 02.png'),
+  //   type: 'image',
+  //   alt: '3D artwork',
+  // },
 ]
 
 const illustrationProjects: Project[] = [
@@ -231,7 +231,7 @@ function ProjectSection({
   onOpen: (project: Project) => void
 }) {
   return (
-    <section id={id} className="mb-20">
+    <section id={id} className="mb-10">
       <div className="mb-8 flex items-center gap-4">
         <div className="h-px flex-1 bg-[#777064]" />
 
@@ -258,15 +258,123 @@ function ProjectSection({
 
 function Gallery() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null)
-
+  
   return (
     <main className="min-h-screen overflow-x-hidden bg-[#dedcc4]">
       <div className="mx-auto w-full max-w-[1800px] px-0 pt-8 md:px-10 lg:px-16">
-        <div className="min-w-0 px-6 py-0  sm:px-10 lg:px-14">
+        <div className="min-w-0 px-6 py-0 sm:px-10 lg:px-14">
+
+          {/* System Directory header */}
+          <header className="mb-10 border-b-2 border-[#5c534b] pb-6 sm:mb-12 text-[#302b27]">
+            <p className="mb-2 font-mono text-xs tracking-[0.2em] text-[#756a5d] sm:text-sm">
+              SYSTEM DIRECTORY / 02
+            </p>
+
+            <h1 className="font-paroxysm text-4xl leading-none tracking-tight sm:text-5xl lg:text-7xl">
+              CREATIVE WORK
+            </h1>
+
+            <div className="mt-5 grid gap-4 md:grid-cols-[1fr_auto] md:items-end">
+              <p className="max-w-2xl text-sm leading-7 sm:text-base">
+                A collection of motion graphics, 3D artwork, illustration, and
+                graphic design exploring visual storytelling, movement, and
+                experimental aesthetics.
+              </p>
+
+              <p className="font-mono text-xs leading-5 text-[#756a5d]">
+                PROJECTS: {String(allProjects.length).padStart(2, '0')}
+                <br />
+                CATEGORIES: 03
+              </p>
+            </div>
+          </header>
+
+          
+          {/* Category index */}
+          <nav
+            aria-label="Gallery category directory"
+            className="mb-12"
+          >
+
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-3">
+              <a
+                href="#motion"
+                className="
+                  group flex min-w-0 items-center justify-between gap-3
+                  border border-[#8c8174] bg-[#e3dfca]
+                  px-3 py-3 font-mono text-xs
+                  transition-colors
+                  hover:bg-[#f0edda] hover:text-[#dedcc4]
+                  focus-visible:outline-2 focus-visible:outline-offset-2
+                  focus-visible:outline-[#302b27]
+                "
+              >
+                <span className="min-w-0">
+                  <span className="mb-1 block text-[10px] text-[#756a5d] group-hover:text-[#c0b69f]">
+                    DIRECTORY / 01
+                  </span>
+                  <span className="block">MOTION GRAPHICS</span>
+                </span>
+                <span aria-hidden="true">↘</span>
+              </a>
+
+              <a
+                href="#illustration"
+                className="
+                  group flex min-w-0 items-center justify-between gap-3
+                  border border-[#8c8174] bg-[#e3dfca]
+                  px-3 py-3 font-mono text-xs
+                  transition-colors
+                  hover:bg-[#f0edda] hover:text-[#dedcc4]
+                  focus-visible:outline-2 focus-visible:outline-offset-2
+                  focus-visible:outline-[#302b27]
+                "
+              >
+                <span className="min-w-0">
+                  <span className="mb-1 block text-[10px] text-[#756a5d] group-hover:text-[#c0b69f]">
+                    DIRECTORY / 02
+                  </span>
+                  <span className="block">ILLUSTRATION / GRAPHIC</span>
+                </span>
+                <span aria-hidden="true">↘</span>
+              </a>
+
+              <a
+                href="#three-dimensional"
+                className="
+                  group flex min-w-0 items-center justify-between gap-3
+                  border border-[#8c8174] bg-[#e3dfca]
+                  px-3 py-3 font-mono text-xs
+                  transition-colors
+                  hover:bg-[#f0edda] hover:text-[#dedcc4]
+                  focus-visible:outline-2 focus-visible:outline-offset-2
+                  focus-visible:outline-[#302b27]
+                "
+              >
+                <span className="min-w-0">
+                  <span className="mb-1 block text-[10px] text-[#756a5d] group-hover:text-[#c0b69f]">
+                    DIRECTORY / 03
+                  </span>
+                  <span className="block">3D WORK</span>
+                </span>
+                <span aria-hidden="true">↘</span>
+              </a>
+            </div>
+          </nav>
+
+          {/* Project sections continue here */}
           <ProjectSection
             id="motion"
             title="MOTION GRAPHICS"
             projects={motionProjects}
+            crtFrame={galleryScreen}
+            onOpen={setSelectedProject}
+          />
+
+          <ProjectSection
+            id="illustration"
+            title="ILLUSTRATION / GRAPHIC WORK"
+            projects={illustrationProjects}
             crtFrame={galleryScreen}
             onOpen={setSelectedProject}
           />
@@ -279,13 +387,13 @@ function Gallery() {
             onOpen={setSelectedProject}
           />
 
-          <ProjectSection
-            id="illustration"
-            title="ILLUSTRATION / GRAPHIC WORK"
-            projects={illustrationProjects}
-            crtFrame={galleryScreen}
-            onOpen={setSelectedProject}
-          />
+          {/* Closing note */}
+          <footer className="mt-10 border-t-2 border-[#5c534b] pt-5 sm:mt-14">
+            <p className="font-mono text-[10px] tracking-[0.15em] text-[#756a5d] mb-10">
+              END OF DIRECTORY // MORE PROJECTS TO COME
+            </p>
+          </footer>
+
         </div>
       </div>
 

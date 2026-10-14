@@ -15,6 +15,9 @@ import blueOff from '../../assets/Blue Rocker Switch Off.svg'
 import greenOn from '../../assets/Green Rocker Switch On.svg'
 import greenOff from '../../assets/Green Rocker Switch Off.svg'
 
+import grayOn from '../../assets/Gray Rocker Switch On.svg'
+import grayOff from '../../assets/Gray Rocker Switch Off.svg'
+
 import RockerSwitch from '../ui/RockerSwitch'
 
 const navigation = [
@@ -32,19 +35,26 @@ const navigation = [
     offImage: yellowOff,
     indicatorColor: '#f4b51c',
   },
-  {
-    label: 'ABOUT',
-    path: '/about',
+    {
+    label: 'WEB DEV',
+    path: '/webdev',
     onImage: blueOn,
     offImage: blueOff,
     indicatorColor: '#3285c5',
   },
   {
-    label: 'CONTACT',
-    path: '/contact',
+    label: 'ABOUT',
+    path: '/about',
     onImage: greenOn,
     offImage: greenOff,
     indicatorColor: '#238c7e',
+  },
+  {
+    label: 'CONTACT',
+    path: '/contact',
+    onImage: grayOn,
+    offImage: grayOff,
+    indicatorColor: '#bac4c4',
   },
 ]
 
@@ -199,11 +209,12 @@ function Header() {
               flex
               items-end
               justify-center
-              gap-[clamp(8px,2.5cqw,18px)]
+              gap-[clamp(5px,1.5cqw,12px)]
 
               min-[655px]:justify-start
+              min-[655px]:gap-[clamp(5px,0.8cqw,10px)]
 
-              min-[1000px]:gap-[clamp(7px,0.3cqw,18px)]
+              min-[1000px]:gap-[clamp(4px,0.22cqw,10px)]
             "
             aria-label="Main navigation"
           >
